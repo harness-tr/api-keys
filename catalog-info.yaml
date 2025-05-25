@@ -14,7 +14,7 @@ metadata:
       title: API Spec
       icon: code
 spec:
-  type: service
+  type: openapi
   owner: group:default/technologyproduct_engineering
   lifecycle: experimental
   definition:
