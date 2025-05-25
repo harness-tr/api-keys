@@ -1,0 +1,63 @@
+openapi: 3.0.0
+info:
+  title: API Keys Service
+  version: 1.0.0
+  description: Simple Node.js API with API Key Management
+servers:
+  - url: http://localhost:3000
+paths:
+  /generate-key:
+    post:
+      summary: Generate a new API key
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - name
+                - email
+              properties:
+                name:
+                  type: string
+                  example: Your Name
+                email:
+                  type: string
+                  example: your@email.com
+      responses:
+        '200':
+          description: API key generated
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  api_key:
+                    type: string
+                    example: 123e4567-e89b-12d3-a456-426614174000
+        '400':
+          description: Name and email are required
+  /data:
+    get:
+      summary: Access protected data
+      parameters:
+        - in: header
+          name: x-api-key
+          required: true
+          schema:
+            type: string
+          description: API key
+      responses:
+        '200':
+          description: Authenticated response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Hello, authenticated user!
+        '401':
+          description: Unauthorized
