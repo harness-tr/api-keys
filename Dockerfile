@@ -16,5 +16,8 @@ COPY . .
 # Expose the port your app runs on
 EXPOSE 3000
 
+# Override the inherited entrypoint
+ENTRYPOINT ["node"]
+
 # Start the server
-CMD ["node", "server.js"]
+CMD ["server.js"]
