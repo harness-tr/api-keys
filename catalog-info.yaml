@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: api-keys
+  description: Simple Node.js API with API Key Management
+  tags:
+    - rest-api
+    - express
+  links:
+    - url: https://github.com/harness-tr/api-keys
+      title: GitHub Repo
+      icon: github
+    - url: https://github.com/harness-tr/api-keys/blob/main/swagger.yaml
+      title: API Spec
+      icon: code
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: group:default/Enabling_Functions_People
+  definition:
+    $text: ./swagger.yaml
