@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: api-keys
-          image: alexsotoharness/api-keys:latest
+          image: alexsotoharness/api-keys:v3
           ports:
             - containerPort: 3000
           env:

@@ -4,7 +4,8 @@ info:
   version: 1.0.0
   description: Simple Node.js API with API Key Management
 servers:
-  - url: http://localhost:3000
+  - url: http://http://34.135.185.105:3000
+    description: Testing server
 paths:
   /generate-key:
     post:
