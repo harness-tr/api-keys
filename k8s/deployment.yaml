@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-keys
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: api-keys
+  template:
+    metadata:
+      labels:
+        app: api-keys
+    spec:
+      containers:
+        - name: api-keys
+          image: alexsotoharness/api-keys:latest
+          ports:
+            - containerPort: 3000
+          env:
+            - name: PORT
+              value: "3000"
