@@ -13,9 +13,16 @@ metadata:
     - url: https://github.com/harness-tr/api-keys/blob/main/swagger.yaml
       title: API Spec
       icon: code
+relations:
+  - type: ownedBy
+    targetRef: group:default/technologyproduct_engineering
+    target:
+      kind: group
+      namespace: default
+      name: technologyproduct_engineering
 spec:
-  type: openapi
+  type: service
+  owner: group:default/technologyproduct_engineering
   lifecycle: experimental
-  owner: group:default/Enabling_Functions_People
   definition:
     $text: ./swagger.yaml
