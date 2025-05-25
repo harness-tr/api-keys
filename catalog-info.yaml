@@ -6,6 +6,8 @@ metadata:
   tags:
     - rest-api
     - express
+  annotations:
+    harness.io/flows-action: api-key-vending  
   links:
     - url: https://github.com/harness-tr/api-keys
       title: GitHub Repo
