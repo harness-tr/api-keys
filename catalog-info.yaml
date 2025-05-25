@@ -15,6 +15,9 @@ metadata:
     - url: https://github.com/harness-tr/api-keys/blob/main/api-keys.oas.yaml
       title: API Spec
       icon: code
+    - url: https://app.harness.io/ng/account/G600Huj2QC2gKhlX0tcvig/module/idp/create/templates/default/api-key-vending?formData=%7B%22api_component%22%3A%22api-keys%22%2C%22requester%22%3A%22user%40example.com%22%7D
+      title: Get API Key
+      icon: code
 spec:
   type: openapi
   owner: group:default/technologyproduct_engineering
