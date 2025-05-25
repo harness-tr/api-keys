@@ -18,4 +18,4 @@ spec:
   owner: group:default/technologyproduct_engineering
   lifecycle: experimental
   definition:
-    $text: ./swagger.yaml
+    $text: ./api-keys.oas.yaml
