@@ -10,7 +10,7 @@ metadata:
     - url: https://github.com/harness-tr/api-keys
       title: GitHub Repo
       icon: github
-    - url: https://github.com/harness-tr/api-keys/blob/main/swagger.yaml
+    - url: https://github.com/harness-tr/api-keys/blob/main/api-keys.oas.yaml
       title: API Spec
       icon: code
 spec:
