@@ -1,7 +1,7 @@
 {
   "name": "Node.js API Keys",
-  "dockerFile": "../Dockerfile",
-  "context": "..",
+  "dockerFile": "Dockerfile",
+  "context": ".",
   "forwardPorts": [3000],
   "customizations": {
     "vscode": {
