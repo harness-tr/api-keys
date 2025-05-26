@@ -8,7 +8,10 @@
       "extensions": [
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode"
-      ]
+      ],
+      "settings": {
+        "workbench.colorTheme": "Default Dark+"
+      }
     }
   },
   "postCreateCommand": "npm install"
